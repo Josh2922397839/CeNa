@@ -105,6 +105,10 @@ a {
 
 ul, ol { list-style: none; }
 
+a, button, .nav-hamburger {
+  touch-action: manipulation;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-heading);
   line-height: 1.3;
@@ -474,16 +478,20 @@ h1, h2, h3, h4, h5, h6 {
 .hero-illus-left {
   left: 3%;
   top: 50%;
-  transform: translateY(-50%) rotate(-8deg);
+  --base-trans: translateY(-50%) rotate(-8deg);
+  transform: var(--base-trans);
   width: clamp(120px, 18vw, 260px);
+  will-change: transform;
   animation: floatGently 6s ease-in-out infinite;
 }
 
 .hero-illus-right {
   right: 3%;
   top: 50%;
-  transform: translateY(-50%) rotate(8deg);
+  --base-trans: translateY(-50%) rotate(8deg);
+  transform: var(--base-trans);
   width: clamp(100px, 15vw, 220px);
+  will-change: transform;
   animation: floatGently 6s ease-in-out infinite 2s;
 }
 
@@ -567,9 +575,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .welcome-illus-img {
   width: 200px;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl); /* Squircle */
   transition: transform var(--transition-base);
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.08));
+  will-change: transform;
 }
 
 .welcome-illus-img:hover { transform: scale(1.08) rotate(-2deg); }
@@ -599,7 +608,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .toc-illustration img {
   max-width: 300px;
+  border-radius: var(--radius-xl); /* Squircle */
   filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.1));
+  will-change: transform;
   animation: floatGently 7s ease-in-out infinite;
 }
 
@@ -691,7 +702,7 @@ h1, h2, h3, h4, h5, h6 {
 .founder-photo-wrap {
   width: 180px;
   height: 180px;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-xl); /* Squircle */
   padding: 4px;
   background: linear-gradient(135deg, var(--gold), var(--burgundy), var(--gold));
   position: relative;
@@ -701,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
 .founder-photo-wrap img {
   width: 100%;
   height: 100%;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-xl); /* Squircle */
   object-fit: cover;
   border: 3px solid var(--bg-card);
 }
@@ -1215,14 +1226,14 @@ h1, h2, h3, h4, h5, h6 {
    ANIMATIONS
    ============================================ */
 @keyframes floatGently {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%, 100% { transform: var(--base-trans, translate3d(0, 0, 0)) translate3d(0, 0, 0); }
+  50% { transform: var(--base-trans, translate3d(0, 0, 0)) translate3d(0, -15px, 0); }
 }
 
 @keyframes floatSlow {
-  0%, 100% { transform: translate(0, 0); }
-  33% { transform: translate(10px, -10px); }
-  66% { transform: translate(-5px, 5px); }
+  0%, 100% { transform: var(--base-trans, translate3d(0, 0, 0)) translate3d(0, 0, 0); }
+  33% { transform: var(--base-trans, translate3d(0, 0, 0)) translate3d(10px, -10px, 0); }
+  66% { transform: var(--base-trans, translate3d(0, 0, 0)) translate3d(-5px, 5px, 0); }
 }
 
 @keyframes bounceDown {
@@ -1357,7 +1368,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: -8px 0 32px rgba(0, 0, 0, 0.1);
   }
   .nav-links.open { right: 0; }
-  .nav-links a { font-size: 1rem; }
+  .nav-links a { font-size: 1.1rem; padding: 12px 16px; width: 100%; text-align: center; }
   .nav-hamburger { display: flex; }
 
   .hero-illus-left,
