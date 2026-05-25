@@ -466,6 +466,61 @@ h1, h2, h3, h4, h5, h6 {
 .hero-cta .arrow { transition: transform var(--transition-fast); }
 .hero-cta:hover .arrow { transform: translateY(3px); }
 
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-cta-primary {
+  background: linear-gradient(135deg, var(--burgundy), var(--red-accent));
+  border-color: var(--burgundy);
+  font-size: 1rem;
+  padding: 18px 44px;
+  box-shadow: 0 6px 24px rgba(139, 26, 26, 0.3);
+}
+
+.hero-cta-primary:hover {
+  box-shadow: 0 10px 36px rgba(139, 26, 26, 0.45);
+}
+
+.hero-cta-primary .btn-icon {
+  font-size: 1.2rem;
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  color: var(--burgundy);
+  border: 2px solid var(--burgundy);
+  font-size: 0.85rem;
+  padding: 14px 32px;
+}
+
+.hero-cta-secondary:hover {
+  background: var(--burgundy);
+  color: var(--white);
+}
+
+/* Nav Menu highlight button */
+.nav-menu-btn {
+  background: var(--burgundy) !important;
+  color: var(--white) !important;
+  padding: 6px 18px !important;
+  border-radius: var(--radius-xl) !important;
+  font-weight: 600 !important;
+  transition: all var(--transition-base) !important;
+}
+
+.nav-menu-btn:hover {
+  background: var(--burgundy-dark) !important;
+  transform: scale(1.05);
+}
+
+.nav-menu-btn::after {
+  display: none !important;
+}
+
 /* Hero Illustrations — line-art sketch style */
 .hero-illus {
   position: absolute;
