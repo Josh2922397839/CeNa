@@ -1,5 +1,5 @@
 /* ============================================
-   CeNa Pastry — Interactive Scripts
+   CeNa Pastry - Interactive Scripts
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Don't unobserve — allow re-animations if desired
+        // Don't unobserve - allow re-animations if desired
         // revealObserver.unobserve(entry.target);
       }
     });

@@ -1,5 +1,5 @@
 /* ============================================
-   CeNa Pastry — Design System & Styles
+   CeNa Pastry - Design System & Styles
    Matched to Canva Business Plan Presentation
    ============================================ */
 
@@ -387,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--gold);
 }
 
-/* CeNa Pastry hero title — matches Canva Slide 1 typography */
+/* CeNa Pastry hero title - matches Canva Slide 1 typography */
 .hero-logo-cena {
   font-family: var(--font-script);
   font-size: clamp(4rem, 12vw, 8rem);
@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-/* Hero Illustrations — line-art sketch style */
+/* Hero Illustrations - line-art sketch style */
 .hero-illus {
   position: absolute;
   pointer-events: none;
@@ -861,7 +861,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
-/* Ornate Gold Plaque — matching the beautiful Canva Slide 5 emblem */
+/* Ornate Gold Plaque - matching the beautiful Canva Slide 5 emblem */
 .about-biz-logo {
   display: flex;
   align-items: center;
@@ -935,7 +935,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-warm);
 }
 
-/* Large burgundy heart background — matches Canva Slides 6, 8 */
+/* Large burgundy heart background - matches Canva Slides 6, 8 */
 .mv-card .heart-bg {
   position: absolute;
   right: -30px;
@@ -1391,7 +1391,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-overlay.active { opacity: 1; pointer-events: all; }
 
 /* ============================================
-   RESPONSIVE DESIGN — Original Sections
+   RESPONSIVE DESIGN - Original Sections
    ============================================ */
 @media (max-width: 1024px) {
   .hero-illus-left,
@@ -1501,7 +1501,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   NEW SECTIONS — Products through Five-Year Plan
+   NEW SECTIONS - Products through Five-Year Plan
    ============================================ */
 
 /* --- Section-level backgrounds & spacing --- */
