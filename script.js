@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---- Scroll Reveal Animation ----
-  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-up');
 
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
