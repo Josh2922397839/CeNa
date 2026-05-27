@@ -80,6 +80,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -1456,7 +1457,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: 0; right: -100%;
+    top: 0; right: -280px;
     width: 280px;
     height: 100vh;
     background: rgba(232, 213, 192, 0.98);
