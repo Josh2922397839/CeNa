@@ -874,6 +874,243 @@
     </div>
   </section>
 
+  <!-- =============== MARKET RESEARCH SURVEY =============== -->
+  <section class="survey-section" id="survey">
+    <div class="container">
+      <div class="ribbon-bow" style="top:20px;left:30px;--bow-rotate:-12deg;"></div>
+      <div class="ribbon-bow ribbon-bow-sm" style="bottom:40px;right:50px;--bow-rotate:18deg;"></div>
+
+      <div class="text-center reveal">
+        <div class="section-header">
+          <span class="script-word">Market Research</span>
+          <span class="uppercase-word">Survey</span>
+        </div>
+        <p class="survey-subtitle">Student & Teacher Dessert Preference Survey</p>
+        <p class="survey-intro">Hello! We are conducting a short survey to understand your opinions on pastries, desserts, and unique drinks. Your responses will help us create products you will love!</p>
+        <p class="survey-thankyou">Thank you for participating! &#x2764;</p>
+      </div>
+
+      <form class="survey-form reveal-up" action="https://formsubmit.co/cenapastries@gmail.com" method="POST">
+        <!-- Formsubmit configuration -->
+        <input type="hidden" name="_subject" value="New CeNa Pastry Survey Response!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://ce-na.vercel.app/#survey-thanks">
+
+        <!-- BASIC INFORMATION -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Basic Information</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">1. Are you a:</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="role" value="Student" required> <span>Student</span></label>
+              <label class="survey-option"><input type="radio" name="role" value="Teacher"> <span>Teacher</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">2. Age Group:</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="age_group" value="Under 12" required> <span>Under 12</span></label>
+              <label class="survey-option"><input type="radio" name="age_group" value="12-14"> <span>12-14</span></label>
+              <label class="survey-option"><input type="radio" name="age_group" value="15-17"> <span>15-17</span></label>
+              <label class="survey-option"><input type="radio" name="age_group" value="18-25"> <span>18-25</span></label>
+              <label class="survey-option"><input type="radio" name="age_group" value="26-40"> <span>26-40</span></label>
+              <label class="survey-option"><input type="radio" name="age_group" value="41+"> <span>41+</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERT PREFERENCES -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Dessert Preferences</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">3. How often do you buy pastries or desserts?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="purchase_frequency" value="Daily" required> <span>Daily</span></label>
+              <label class="survey-option"><input type="radio" name="purchase_frequency" value="A few times a week"> <span>A few times a week</span></label>
+              <label class="survey-option"><input type="radio" name="purchase_frequency" value="Once a week"> <span>Once a week</span></label>
+              <label class="survey-option"><input type="radio" name="purchase_frequency" value="Occasionally"> <span>Occasionally</span></label>
+              <label class="survey-option"><input type="radio" name="purchase_frequency" value="Rarely"> <span>Rarely</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">4. Which desserts do you enjoy the most? <span class="survey-hint">(Select all that apply)</span></label>
+            <div class="survey-options survey-options--wrap">
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Cookies"> <span>Cookies</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Cakes"> <span>Cakes</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Cupcakes"> <span>Cupcakes</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Brownies"> <span>Brownies</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Candy"> <span>Candy</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_desserts" value="Ice Cream"> <span>Ice Cream</span></label>
+            </div>
+            <div class="survey-other-wrap">
+              <label class="survey-label-sm">Other:</label>
+              <input type="text" name="favorite_desserts_other" class="survey-input survey-input--inline" placeholder="Type here...">
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">5. Would you be interested in trying unique desserts?</label>
+            <div class="survey-options">
+              <label class="survey-option survey-option--yes"><input type="radio" name="try_unique" value="Yes" required> <span>Yes</span></label>
+              <label class="survey-option survey-option--no"><input type="radio" name="try_unique" value="No"> <span>No</span></label>
+              <label class="survey-option survey-option--maybe"><input type="radio" name="try_unique" value="Maybe"> <span>Maybe</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">6. Which unique dessert sounds most appealing? <span class="survey-hint">(Choose one or more)</span></label>
+            <div class="survey-options survey-options--wrap">
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="unique_desserts" value="Cotton Candy Cookies"> <span>Cotton Candy Cookies</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="unique_desserts" value="Strawberry Cake"> <span>Strawberry Cake</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="unique_desserts" value="Themed Cupcakes"> <span>Themed Cupcakes</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="unique_desserts" value="Decorative Candy Jars"> <span>Decorative Candy Jars</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="unique_desserts" value="Chocolate-dipped Strawberries"> <span>Chocolate-dipped Strawberries</span></label>
+            </div>
+            <div class="survey-other-wrap">
+              <label class="survey-label-sm">Other:</label>
+              <input type="text" name="unique_desserts_other" class="survey-input survey-input--inline" placeholder="Type here...">
+            </div>
+          </div>
+        </div>
+
+        <!-- DRINK PREFERENCES -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Drink Preferences</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">7. Do you enjoy specialty drinks?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="specialty_drinks" value="Yes" required> <span>Yes</span></label>
+              <label class="survey-option"><input type="radio" name="specialty_drinks" value="No"> <span>No</span></label>
+              <label class="survey-option"><input type="radio" name="specialty_drinks" value="Sometimes"> <span>Sometimes</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">8. Which drinks would you most likely buy? <span class="survey-hint">(Select all that apply)</span></label>
+            <div class="survey-options survey-options--wrap">
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_drinks" value="Pink Daisy Soda"> <span>Pink Daisy Soda</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_drinks" value="Milkshakes"> <span>Milkshakes</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_drinks" value="Fruit Drinks"> <span>Fruit Drinks</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_drinks" value="Bubble Tea/Boba"> <span>Bubble Tea/Boba</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="favorite_drinks" value="Soft Drinks"> <span>Soft Drinks</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRICING & AFFORDABILITY -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Pricing & Affordability</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">9. What price range do you think is reasonable for desserts/snacks?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="price_range" value="500-600 JMD" required> <span>500-600 JMD</span></label>
+              <label class="survey-option"><input type="radio" name="price_range" value="700+ JMD"> <span>700+ JMD</span></label>
+              <label class="survey-option"><input type="radio" name="price_range" value="1000 JMD"> <span>1000 JMD</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">10. What matters most when buying desserts? <span class="survey-hint">(Choose up to 2)</span></label>
+            <div class="survey-options survey-options--wrap">
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Taste"> <span>Taste</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Price"> <span>Price</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Appearance"> <span>Appearance</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Portion Size"> <span>Portion Size</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Cleanliness"> <span>Cleanliness</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="buying_priorities" value="Customer Service"> <span>Customer Service</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOMER PREFERENCES -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Customer Preferences</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">11. Would you appreciate allergy-friendly or lactose-free options?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="allergy_friendly" value="Yes" required> <span>Yes</span></label>
+              <label class="survey-option"><input type="radio" name="allergy_friendly" value="No"> <span>No</span></label>
+              <label class="survey-option"><input type="radio" name="allergy_friendly" value="Maybe"> <span>Maybe</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">12. Would online ordering interest you?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="online_ordering" value="Yes" required> <span>Yes</span></label>
+              <label class="survey-option"><input type="radio" name="online_ordering" value="No"> <span>No</span></label>
+              <label class="survey-option"><input type="radio" name="online_ordering" value="Maybe"> <span>Maybe</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOMER EXPERIENCE -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Customer Experience</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">13. What kind of atmosphere would attract you to a pastry business? <span class="survey-hint">(Select all that apply)</span></label>
+            <div class="survey-options survey-options--wrap">
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="atmosphere" value="Cozy & Relaxing"> <span>Cozy & Relaxing</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="atmosphere" value="Fun & Colorful"> <span>Fun & Colorful</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="atmosphere" value="Elegant & Professional"> <span>Elegant & Professional</span></label>
+              <label class="survey-option survey-option--checkbox"><input type="checkbox" name="atmosphere" value="Trendy & Aesthetic"> <span>Trendy & Aesthetic</span></label>
+            </div>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">14. Would loyalty rewards or membership benefits encourage you to return?</label>
+            <div class="survey-options">
+              <label class="survey-option"><input type="radio" name="loyalty_rewards" value="Yes" required> <span>Yes</span></label>
+              <label class="survey-option"><input type="radio" name="loyalty_rewards" value="No"> <span>No</span></label>
+              <label class="survey-option"><input type="radio" name="loyalty_rewards" value="Maybe"> <span>Maybe</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- FINAL OPINIONS -->
+        <div class="survey-group">
+          <h3 class="survey-group-title">Final Opinions</h3>
+
+          <div class="survey-question">
+            <label class="survey-label">15. What types of desserts or drinks would you like CeNa Pastry to offer?</label>
+            <textarea name="dessert_suggestions" class="survey-textarea" rows="3" placeholder="Tell us your ideas..."></textarea>
+          </div>
+
+          <div class="survey-question">
+            <label class="survey-label">16. Additional Comments or Suggestions:</label>
+            <textarea name="additional_comments" class="survey-textarea" rows="3" placeholder="Any additional thoughts..."></textarea>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="survey-submit-wrap">
+          <button type="submit" class="survey-submit-btn">
+            <span class="btn-icon">💌</span>
+            Submit Survey
+          </button>
+          <p class="survey-submit-note">Thank you for taking the time to complete this survey. Your opinions and suggestions are truly appreciated and will help CeNa Pastry grow!</p>
+        </div>
+      </form>
+
+      <!-- Thank you message (shown after redirect) -->
+      <div class="survey-thanks" id="survey-thanks">
+        <div class="content-card" style="text-align:center;">
+          <h3 style="font-family:var(--font-script);font-size:2.5rem;color:var(--burgundy);margin-bottom:16px;">Thank You! &#x2764;</h3>
+          <p>Your survey response has been submitted successfully. We truly appreciate your feedback!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- =============== FOOTER =============== -->
   <footer class="footer" id="contact">
     <div class="container">
