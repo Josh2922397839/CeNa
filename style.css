@@ -1510,13 +1510,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
-  .hero-logo-cena { font-size: 3.5rem; }
-  .hero-logo-pastry { font-size: 2.5rem; }
+  .hero-logo-cena { font-size: 3rem; }
+  .hero-logo-pastry { font-size: 2.2rem; }
 
-  .hero-cta { padding: 14px 32px; font-size: 0.8rem; }
-  .welcome-illus-img { width: 110px; }
+  /* Ensure hero buttons are full width and easily tappable */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .hero-cta { padding: 14px 20px; font-size: 0.95rem; width: 100%; text-align: center; justify-content: center; }
 
-  .biz-logo-plaque-container { width: 200px; height: 200px; }
+  .welcome-illus-img { width: 100px; }
+
+  .biz-logo-plaque-container { width: 180px; height: 180px; }
+
+  /* Font size adjustments to fit on very small screens */
+  .section-header .script-word { font-size: clamp(2rem, 8vw, 2.4rem); line-height: 1; }
+  .section-header .uppercase-word { font-size: clamp(1.3rem, 6vw, 1.8rem); letter-spacing: 2px; }
+  .section-header { margin-bottom: 30px; }
+
+  /* Reduce padding on mobile to save space */
+  .hero { padding: 80px 16px 40px; }
+  .welcome, .toc, .about-us, .about-business,
+  .goals-section, .executive, .biz-goals { padding: 40px 0; }
 }
 
 /* ============================================
@@ -2439,6 +2456,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
+  /* Reduce padding on mobile to save space */
+  .product-services, .inclusivity, .online-plan, .target-customers,
+  .unique-features, .membership, .marketing-plan, .market-research,
+  .logistics, .startup-costs, .revenue, .risk-management, .five-year-plan,
+  .investment-request, .conclusion, .survey-section {
+    padding: 40px 0;
+  }
+  
+  .content-card, .investment-card, .conclusion-card { padding: 24px 16px; }
+  .survey-group { padding: 20px 16px; }
+
   .survey-option {
     padding: 8px 12px;
     border-radius: 30px;
