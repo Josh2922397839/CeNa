@@ -508,6 +508,25 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
 }
 
+.hero-cta-survey {
+  background: linear-gradient(135deg, var(--burgundy-mid), var(--red-accent));
+  border-color: var(--red-accent);
+  color: var(--white);
+  font-size: 0.95rem;
+  padding: 16px 36px;
+  box-shadow: 0 6px 24px rgba(179, 27, 46, 0.25);
+}
+
+.hero-cta-survey:hover {
+  background: linear-gradient(135deg, var(--red-accent), #C62828);
+  box-shadow: 0 10px 36px rgba(179, 27, 46, 0.4);
+  color: var(--white);
+}
+
+.hero-cta-survey .btn-icon {
+  font-size: 1.1rem;
+}
+
 .hero-cta-secondary {
   background: transparent;
   color: var(--burgundy);
