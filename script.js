@@ -221,6 +221,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ---- Survey Checkbox Multiple Selection Sync ----
+  const surveyForm = document.querySelector('.survey-form');
+  if (surveyForm) {
+    surveyForm.addEventListener('submit', () => {
+      // List of all checkbox names we want to capture fully as comma-separated values
+      const checkboxNames = ['favorite_desserts', 'unique_desserts', 'favorite_drinks', 'buying_priorities', 'atmosphere'];
+
+      checkboxNames.forEach(name => {
+        // Find all selected checkboxes in this category
+        const checkedBoxes = Array.from(surveyForm.querySelectorAll(`input[name="${name}"]:checked`));
+        
+        // Comma-join their values
+        const joinedValue = checkedBoxes.map(cb => cb.value).join(', ');
+
+        // Create a hidden input with the category name and populated list
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = name;
+        hiddenInput.value = joinedValue || 'None';
+
+        // Remove the name attribute from the original checkboxes so they are not submitted individually
+        const allBoxes = surveyForm.querySelectorAll(`input[name="${name}"]`);
+        allBoxes.forEach(cb => {
+          cb.removeAttribute('name');
+        });
+
+        surveyForm.appendChild(hiddenInput);
+      });
+    });
+  }
+
   // ---- Initial state ----
   handleScroll();
 
