@@ -151,6 +151,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------- Utility Classes ---------- */
+.page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
